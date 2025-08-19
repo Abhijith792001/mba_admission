@@ -1,0 +1,72 @@
+
+.asb-section .section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.asb-section .contact-box {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+.asb-section .info-box {
+  background: #e9f7ef;
+  border-left: 4px solid #28a745;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.asb-section .info-box h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.asb-section .date-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.asb-section .date-card .card-header {
+  background: linear-gradient(135deg, #a4123f 0%, #ff4d4d 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+
+.asb-section .date-card .highlight {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.asb-section .date-card .closed-text {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+ .login-wrap {
+            margin-top: 0 !important;
+            /* default for mobile */
+        }
+
+        @media (min-width: 768px) {
+
+            /* tablet and up */
+            .login-wrap {
+                margin-top: 50px !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            /* large desktops */
+            .login-wrap {
+                margin-top: 50px !important;
+            }
+        }
