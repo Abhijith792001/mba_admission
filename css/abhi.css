@@ -69,4 +69,78 @@
             .login-wrap {
                 margin-top: 50px !important;
             }
-        }
+        }  .content-box {
+    border-radius: 12px;
+    position: relative;
+    z-index: 2; /* bring on top */
+    margin-left: -150px; /* overlap image */
+  }
+
+  @media (max-width: 991px) {
+    /* Reset overlap on mobile */
+    .content-box {
+      margin-left: 0;
+    }
+  }
+
+
+  /* Horizontal rod */
+.rod {
+  height: 12px;
+  background: linear-gradient(to right, #666, #bbb, #666);
+  border-radius: 6px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Flags */
+.flag {
+  background: #fff;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+/* Flag bottom triangle */
+.flag::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid;
+}
+
+/* Title inside flag */
+.flag h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.flag p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Colors for steps */
+.step-1 { background: #0d3b55; }
+.step-1::after { border-top-color: #0d3b55; }
+
+.step-2 { background: #d4af37; }
+.step-2::after { border-top-color: #d4af37; }
+
+.step-3 { background: #d35400; }
+.step-3::after { border-top-color: #d35400; }
+
+.step-4 { background: #b22222; }
+.step-4::after { border-top-color: #b22222; }
+
+.step-5 { background: #555; }
+.step-5::after { border-top-color: #555; }
