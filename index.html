@@ -101,9 +101,9 @@
     <section class="container-fluid">
         <div class="row">
             <!-- Left Column -->
-            <div class="col-md-6 p-0">
+            <div class="col-md-7 p-0">
                 <!-- Desktop (lg and above) -->
-                <img src="images/bg-half.jpg" alt="Desktop Image" class="img-fluid w-100 d-none d-lg-block"
+                <img src="images/try.jpg" alt="Desktop Image" class="img-fluid w-100 d-none d-lg-block"
                     style="object-fit: cover; " oncontextmenu="return false" draggable="false">
 
                 <!-- Tablet (md only) -->
@@ -112,13 +112,13 @@
                     oncontextmenu="return false" draggable="false">
 
                 <!-- Mobile (sm and below) -->
-                <img src="images/bg-half.jpg" alt="Mobile Image" class="img-fluid w-100 d-block d-md-none"
+                <img src="images/bg-half-ai.jpg" alt="Mobile Image" class="img-fluid w-100 d-block d-md-none"
                     style="object-fit: cover; height: auto;" oncontextmenu="return false" draggable="false">
-                    
+
             </div>
 
             <!-- Right Column -->
-            <div class="col-md-6 d-flex justify-content-center align-items-start align-items-md-center p-0">
+            <div class="col-md-5 d-flex justify-content-center align-items-start align-items-md-center p-0">
                 <div class="login-wrap p-4 p-md-5 shadow rounded bg-white w-100" style="max-width: 400px;">
                     <h3 class="mb-4 text-center">Register Now</h3>
                     <form action="#" class="signup-form">
@@ -214,13 +214,21 @@
 
             <!-- Right: Content -->
             <div class="col-lg-6 col-md-12 position-relative">
-                <div class="p-4 bg-primary text-white shadow content-box">
-                    <h1 class="h3 fw-bold text-white mb-3">Dual Degree</h1>
-                    <p class="mb-0">
-                        Programme with University at Buffalo
-                        Amrita School of Business, Bengaluru offers a unique MBA programme in
-                        collaboration with one of the top public universities in USA – University at
-                        Buffalo, State University of New York (UB).
+                <div class="p-4 text-white shadow content-box" style="
+            border-radius: 16px; 
+              background: linear-gradient(135deg, #a4123f, #d91b4d); 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        " onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 25px rgba(0,0,0,0.35)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.25)';">
+                    <h1 class="h3 fw-bold mb-3" style="color: #fff; font-family: 'Segoe UI', sans-serif;">Dual Degree
+                    </h1>
+                    <p class="mb-0"
+                        style="line-height: 1.6; color: #f1f1f1; font-family: 'Segoe UI', sans-serif; font-size: 0.95rem;">
+                        Programme with University at Buffalo. Amrita School of Business, Bengaluru offers a unique MBA
+                        programme in
+                        collaboration with one of the top public universities in the USA – University at Buffalo, State
+                        University of New York (UB).
                         <br><br>
                         The Amrita–UB MBA-MS collaborative dual-degree programme began in 2009 and
                         has taken great strides over the last few years. On successful completion, the
@@ -229,6 +237,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -239,10 +248,14 @@
             <!-- Why Choose ASB -->
             <div class="card mt-3" style="border-radius: 12px;">
                 <div class="card-header bg-primary" id="headingOne">
-                    <h6 type="button" class="text-white" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
+
+                    <h6 type="button" class="text-white d-flex justify-content-between align-items-center"
+                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
                         Why Choose ASB?
+                        <span class="arrow" style="transition: transform 0.3s;">&#9662;</span> <!-- down arrow -->
                     </h6>
+
                 </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
@@ -474,309 +487,485 @@
 
 
     <section class="container mt-5 mb-5">
-    <h4 class="text-center text-primary mb-4" style="font-weight: 600; font-size: 25px;">Amrita MBA Fee Structure For 2025</h4>
+        <h4 class="text-center text-primary mb-4" style="font-weight: 600; font-size: 25px;">Amrita MBA Fee Structure
+            For 2025</h4>
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="amritapuri-tab" data-toggle="tab" data-target="#amritapuri" type="button" role="tab" aria-controls="amritapuri" aria-selected="true">Amritapuri</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="bengaluru-tab" data-toggle="tab" data-target="#bengaluru" type="button" role="tab" aria-controls="bengaluru" aria-selected="false">Bengaluru</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="kochi-tab" data-toggle="tab" data-target="#kochi" type="button" role="tab" aria-controls="kochi" aria-selected="false">Kochi</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="amaravati-tab" data-toggle="tab" data-target="#amaravati" type="button" role="tab" aria-controls="amaravati" aria-selected="false">Amaravati</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="coimbatore-tab" data-toggle="tab" data-target="#coimbatore" type="button" role="tab" aria-controls="coimbatore" aria-selected="false">Coimbatore</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="mysuru-tab" data-toggle="tab" data-target="#mysuru" type="button" role="tab" aria-controls="mysuru" aria-selected="false">Mysuru</button>
-        </li>
-    </ul>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="amritapuri-tab" data-toggle="tab" data-target="#amritapuri"
+                    type="button" role="tab" aria-controls="amritapuri" aria-selected="true">Amritapuri</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bengaluru-tab" data-toggle="tab" data-target="#bengaluru" type="button"
+                    role="tab" aria-controls="bengaluru" aria-selected="false">Bengaluru</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="kochi-tab" data-toggle="tab" data-target="#kochi" type="button" role="tab"
+                    aria-controls="kochi" aria-selected="false">Kochi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amaravati-tab" data-toggle="tab" data-target="#amaravati" type="button"
+                    role="tab" aria-controls="amaravati" aria-selected="false">Amaravati</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="coimbatore-tab" data-toggle="tab" data-target="#coimbatore" type="button"
+                    role="tab" aria-controls="coimbatore" aria-selected="false">Coimbatore</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mysuru-tab" data-toggle="tab" data-target="#mysuru" type="button"
+                    role="tab" aria-controls="mysuru" aria-selected="false">Mysuru</button>
+            </li>
+        </ul>
 
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="amritapuri" role="tabpanel" aria-labelledby="amritapuri-tab">
-            <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹8,20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee per year</td>
-                        <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Fee per year</td>
-                        <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="amritapuri" role="tabpanel" aria-labelledby="amritapuri-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹8,20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee per year</td>
+                            <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Fee per year</td>
+                            <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="bengaluru" role="tabpanel" aria-labelledby="bengaluru-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹12,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee per year</td>
+                            <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Fee per year</td>
+                            <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="kochi" role="tabpanel" aria-labelledby="kochi-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹8,20,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee per year</td>
+                            <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Fee per year</td>
+                            <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="amaravati" role="tabpanel" aria-labelledby="amaravati-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹6,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee per year</td>
+                            <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Fee per year</td>
+                            <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="coimbatore" role="tabpanel" aria-labelledby="coimbatore-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹12,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee (for 2 years)</td>
+                            <td>₹126,000</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Bill (subject to change for the second year)</td>
+                            <td>₹116,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Fee</strong></td>
+                            <td><strong>₹1,442,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="mysuru" role="tabpanel" aria-labelledby="mysuru-tab">
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <td>Total fee all inclusive for the programme (2 years)</td>
+                            <td>₹6,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Hostel Fee per year</td>
+                            <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                        <tr>
+                            <td>Mess Fee per year</td>
+                            <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="tab-pane fade" id="bengaluru" role="tabpanel" aria-labelledby="bengaluru-tab">
-            <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹12,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee per year</td>
-                        <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Fee per year</td>
-                        <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tab-pane fade" id="kochi" role="tabpanel" aria-labelledby="kochi-tab">
-             <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹8,20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee per year</td>
-                        <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Fee per year</td>
-                        <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tab-pane fade" id="amaravati" role="tabpanel" aria-labelledby="amaravati-tab">
-             <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹6,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee per year</td>
-                        <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Fee per year</td>
-                        <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tab-pane fade" id="coimbatore" role="tabpanel" aria-labelledby="coimbatore-tab">
-             <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹12,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee (for 2 years)</td>
-                        <td>₹126,000</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Bill (subject to change for the second year)</td>
-                        <td>₹116,000</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total Fee</strong></td>
-                        <td><strong>₹1,442,000</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tab-pane fade" id="mysuru" role="tabpanel" aria-labelledby="mysuru-tab">
-             <table class="table table-bordered mt-3">
-                <tbody>
-                    <tr>
-                        <td>Total fee all inclusive for the programme (2 years)</td>
-                        <td>₹6,00,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hostel Fee per year</td>
-                        <td>Hostel fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                    <tr>
-                        <td>Mess Fee per year</td>
-                        <td>Mess fee is under finalization, which will be communicated to all in due course.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-<section class="container mt-5 mb-5">
-    <h4 class="text-center text-primary mb-4" style="font-weight: 600; font-size: 25px;">Amrita MBA Scholarship Details</h4>
+    <section class="container mt-5 mb-5">
+        <h4 class="text-center text-primary mb-4" style="font-weight: 600; font-size: 25px;">Amrita MBA Scholarship
+            Details</h4>
 
-    <ul class="nav nav-tabs" id="scholarshipTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="amritapuri-scholarship-tab" data-toggle="tab" data-target="#amritapuri-scholarship" type="button" role="tab" aria-controls="amritapuri-scholarship" aria-selected="true">Amritapuri</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="bengaluru-scholarship-tab" data-toggle="tab" data-target="#bengaluru-scholarship" type="button" role="tab" aria-controls="bengaluru-scholarship" aria-selected="false">Bengaluru</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="kochi-scholarship-tab" data-toggle="tab" data-target="#kochi-scholarship" type="button" role="tab" aria-controls="kochi-scholarship" aria-selected="false">Kochi</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="amaravati-scholarship-tab" data-toggle="tab" data-target="#amaravati-scholarship" type="button" role="tab" aria-controls="amaravati-scholarship" aria-selected="false">Amaravati</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="coimbatore-scholarship-tab" data-toggle="tab" data-target="#coimbatore-scholarship" type="button" role="tab" aria-controls="coimbatore-scholarship" aria-selected="false">Coimbatore</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="mysuru-scholarship-tab" data-toggle="tab" data-target="#mysuru-scholarship" type="button" role="tab" aria-controls="mysuru-scholarship" aria-selected="false">Mysuru</button>
-        </li>
-    </ul>
+        <ul class="nav nav-tabs" id="scholarshipTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="amritapuri-scholarship-tab" data-toggle="tab"
+                    data-target="#amritapuri-scholarship" type="button" role="tab"
+                    aria-controls="amritapuri-scholarship" aria-selected="true">Amritapuri</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bengaluru-scholarship-tab" data-toggle="tab"
+                    data-target="#bengaluru-scholarship" type="button" role="tab" aria-controls="bengaluru-scholarship"
+                    aria-selected="false">Bengaluru</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="kochi-scholarship-tab" data-toggle="tab" data-target="#kochi-scholarship"
+                    type="button" role="tab" aria-controls="kochi-scholarship" aria-selected="false">Kochi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amaravati-scholarship-tab" data-toggle="tab"
+                    data-target="#amaravati-scholarship" type="button" role="tab" aria-controls="amaravati-scholarship"
+                    aria-selected="false">Amaravati</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="coimbatore-scholarship-tab" data-toggle="tab"
+                    data-target="#coimbatore-scholarship" type="button" role="tab"
+                    aria-controls="coimbatore-scholarship" aria-selected="false">Coimbatore</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mysuru-scholarship-tab" data-toggle="tab" data-target="#mysuru-scholarship"
+                    type="button" role="tab" aria-controls="mysuru-scholarship" aria-selected="false">Mysuru</button>
+            </li>
+        </ul>
 
-    <div class="tab-content" id="scholarshipTabContent">
-        <div class="tab-pane fade show active p-3" id="amritapuri-scholarship" role="tabpanel" aria-labelledby="amritapuri-scholarship-tab">
-            <h6 class="text-danger">PROPOSED TERMS AND CONDITIONS FOR AWARD OF SCHOLARSHIP:</h6>
-            <p>Scholarship Fees. The eligibility criterion is as below. For the 1st year</p>
-            <table class="table table-bordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th>Category</th>
-                        <th>Merit Criteria</th>
-                        <th>Tuition Fee Waiver</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td colspan="3" class="font-weight-bold">ACAT</td></tr>
-                    <tr><td>Slab 1</td><td>Top 3 Rank holders ? (Needs to be decided)</td><td>100%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 85 percentile ? (Needs to be decided)</td><td>50%</td></tr>
-                    <tr><td>Slab 3</td><td>Above 75 percentile ? (Needs to be decided)</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">CAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 85 percentile</td><td>70%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 75 to 85 percentile</td><td>70%</td></tr>
-                    <tr><td>Slab 3</td><td>70 to 75 percentile</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">MAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 90 percentile</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 80 to 90 percentile</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">KMAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 350 marks out of 720 marks</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>300 to 350 marks out of 720 marks</td><td>25%</td></tr>
-                </tbody>
-            </table>
-            <p><strong>1st year:</strong> The scholarship will be available to the top 10% of sanctioned intake</p>
-            <p><strong>2nd year:</strong> The scholarship will be available to students with a CGPA 8.5 and higher – subject to a maximum of 10% of the sanctioned intake</p>
-            <h6 class="text-danger mt-3">RENEWAL OF SCHOLARSHIP FEES:</h6>
-            <p>Renewal of scholarship Fees for subsequent years is subject to meeting the following conditions:</p>
-            <ol>
-                <li>Consistent Academic performance by securing a Cumulative Grade Point Average (CGPA) of at least 8.5 at the end of the first year of the programme.</li>
-                <li>A certificate of good conduct from the Principal. S/he will take into account if any disciplinary action was taken against the student during the period of study in the University.</li>
-                <li>Clearing each semester without any arrear.</li>
-                <li>Failing to meet the a fore mentioned conditions 1,2 and 3, the candidate will be required to pay the full fees in the second year.</li>
-            </ol>
+        <div class="tab-content" id="scholarshipTabContent">
+            <div class="tab-pane fade show active p-3" id="amritapuri-scholarship" role="tabpanel"
+                aria-labelledby="amritapuri-scholarship-tab">
+                <h6 class="text-danger">PROPOSED TERMS AND CONDITIONS FOR AWARD OF SCHOLARSHIP:</h6>
+                <p>Scholarship Fees. The eligibility criterion is as below. For the 1st year</p>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Category</th>
+                            <th>Merit Criteria</th>
+                            <th>Tuition Fee Waiver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">ACAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Top 3 Rank holders ? (Needs to be decided)</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 85 percentile ? (Needs to be decided)</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 3</td>
+                            <td>Above 75 percentile ? (Needs to be decided)</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">CAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 85 percentile</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 75 to 85 percentile</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 3</td>
+                            <td>70 to 75 percentile</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">MAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 90 percentile</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 80 to 90 percentile</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">KMAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 350 marks out of 720 marks</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>300 to 350 marks out of 720 marks</td>
+                            <td>25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>1st year:</strong> The scholarship will be available to the top 10% of sanctioned intake</p>
+                <p><strong>2nd year:</strong> The scholarship will be available to students with a CGPA 8.5 and higher –
+                    subject to a maximum of 10% of the sanctioned intake</p>
+                <h6 class="text-danger mt-3">RENEWAL OF SCHOLARSHIP FEES:</h6>
+                <p>Renewal of scholarship Fees for subsequent years is subject to meeting the following conditions:</p>
+                <ol>
+                    <li>Consistent Academic performance by securing a Cumulative Grade Point Average (CGPA) of at least
+                        8.5 at the end of the first year of the programme.</li>
+                    <li>A certificate of good conduct from the Principal. S/he will take into account if any
+                        disciplinary action was taken against the student during the period of study in the University.
+                    </li>
+                    <li>Clearing each semester without any arrear.</li>
+                    <li>Failing to meet the a fore mentioned conditions 1,2 and 3, the candidate will be required to pay
+                        the full fees in the second year.</li>
+                </ol>
+            </div>
+
+            <div class="tab-pane fade p-3" id="bengaluru-scholarship" role="tabpanel"
+                aria-labelledby="bengaluru-scholarship-tab">
+                <h5 class="text-danger">Scholarship</h5>
+                <p>Scholarship Waiver on Tuition Fee for 10% of the class.</p>
+                <p>Up to 70% waiver in tuition fee for top scorers in Amrita Common Aptitude Test or CAT.</p>
+                <ul>
+                    <li>70% waiver for CAT percentile above 85</li>
+                    <li>50% waiver for CAT percentile above 75 to 85</li>
+                </ul>
+                <p class="mt-3"><strong>Renewal of Scholarship for subsequent year is subject to meeting the following
+                        conditions:</strong></p>
+                <ul>
+                    <li>Consistent Academic performance by securing a CGPA of at least 8 in the first year.</li>
+                    <li>A certificate of good conduct from the Chairman.</li>
+                    <li>Clearing each trimester without any arrears.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade p-3" id="kochi-scholarship" role="tabpanel"
+                aria-labelledby="kochi-scholarship-tab">
+                <h6 class="text-danger">PROPOSED TERMS AND CONDITIONS FOR AWARD OF SCHOLARSHIP:</h6>
+                <p>Scholarship Fees. The eligibility criterion is as below. For the 1st year</p>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Category</th>
+                            <th>Merit Criteria</th>
+                            <th>Tuition Fee Waiver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">ACAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Top 3 Rank holders ? (Needs to be decided)</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 85 percentile ? (Needs to be decided)</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 3</td>
+                            <td>Above 75 percentile ? (Needs to be decided)</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">CAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 85 percentile</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 75 to 85 percentile</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 3</td>
+                            <td>70 to 75 percentile</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">MAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 90 percentile</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 80 to 90 percentile</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold">KMAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 350 marks out of 720 marks</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>300 to 350 marks out of 720 marks</td>
+                            <td>25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><strong>1st year:</strong> The scholarship will be available to the top 10% of sanctioned intake</p>
+                <p><strong>2nd year:</strong> The scholarship will be available to students with a CGPA 8.5 and higher –
+                    subject to a maximum of 10% of the sanctioned intake</p>
+                <h6 class="text-danger mt-3">RENEWAL OF SCHOLARSHIP FEES:</h6>
+                <p>Renewal of scholarship Fees for subsequent years is subject to meeting the following conditions:</p>
+                <ol>
+                    <li>Consistent Academic performance by securing a Cumulative Grade Point Average (CGPA) of at least
+                        8.5 at the end of the first year of the programme.</li>
+                    <li>A certificate of good conduct from the Principal. S/he will take into account if any
+                        disciplinary action was taken against the student during the period of study in the University.
+                    </li>
+                    <li>Clearing each semester without any arrear.</li>
+                    <li>Failing to meet the a fore mentioned conditions 1,2 and 3, the candidate will be required to pay
+                        the full fees in the second year.</li>
+                </ol>
+            </div>
+
+            <div class="tab-pane fade p-3" id="amaravati-scholarship" role="tabpanel"
+                aria-labelledby="amaravati-scholarship-tab">
+                <p>Scholarship Fees: The eligibility criterion is as below.<br>For the 1st year</p>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Category</th>
+                            <th>Merit Criteria</th>
+                            <th>Tuition Fee Waiver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold text-danger">CAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 85 percentile in CAT</td>
+                            <td>70%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 75 to 85 percentile in CAT</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 3</td>
+                            <td>70 to 75 percentile in CAT</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold text-danger">MAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 90 percentile in MAT</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>Above 80 to 90 percentile in MAT</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="font-weight-bold text-danger">KMAT</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 1</td>
+                            <td>Above 350 marks out of 720</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Slab 2</td>
+                            <td>300 to 350 marks out of 720</td>
+                            <td>25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade p-3" id="coimbatore-scholarship" role="tabpanel"
+                aria-labelledby="coimbatore-scholarship-tab">
+                <h5 class="text-danger">Scholarship</h5>
+                <p>
+                    Dedicated to recognizing and rewarding academic excellence, talent, and potential through our
+                    Admission Scholarship Policy. To be considered, applicants must demonstrate a consistent record of
+                    academic excellence across Class 10, Class 12, undergraduate studies, and one of the entrance exams
+                    (CAT, MAT, or ACAT). Based on the selection process, students may receive scholarships up to 100%.
+                    Applications meeting these criteria will be shortlisted, and selected candidates will be notified
+                    accordingly. The renewal of scholarships for the second year will be determined by the scholarship
+                    committee based on the student's academic performance in the first year of the MBA program.
+                    Scholarship terms are subject to change at the discretion of the scholarship committee. By fostering
+                    a diverse and dynamic community of scholars, we strive to support the aspirations of our students
+                    and contribute positively to society.
+                </p>
+            </div>
+
+            <div class="tab-pane fade p-3" id="mysuru-scholarship" role="tabpanel"
+                aria-labelledby="mysuru-scholarship-tab">
+                <h5 class="text-danger">Scholarship</h5>
+                <p>
+                    Scholarships are available for deserving students, ranging from 25% to 75% of the tuition fee,
+                    limited to 50% of the seats (30). Selection will be based on ACAT / MAT / CAT / CMAT scores and an
+                    interview.
+                </p>
+            </div>
         </div>
-
-        <div class="tab-pane fade p-3" id="bengaluru-scholarship" role="tabpanel" aria-labelledby="bengaluru-scholarship-tab">
-            <h5 class="text-danger">Scholarship</h5>
-            <p>Scholarship Waiver on Tuition Fee for 10% of the class.</p>
-            <p>Up to 70% waiver in tuition fee for top scorers in Amrita Common Aptitude Test or CAT.</p>
-            <ul>
-                <li>70% waiver for CAT percentile above 85</li>
-                <li>50% waiver for CAT percentile above 75 to 85</li>
-            </ul>
-            <p class="mt-3"><strong>Renewal of Scholarship for subsequent year is subject to meeting the following conditions:</strong></p>
-            <ul>
-                <li>Consistent Academic performance by securing a CGPA of at least 8 in the first year.</li>
-                <li>A certificate of good conduct from the Chairman.</li>
-                <li>Clearing each trimester without any arrears.</li>
-            </ul>
-        </div>
-
-        <div class="tab-pane fade p-3" id="kochi-scholarship" role="tabpanel" aria-labelledby="kochi-scholarship-tab">
-            <h6 class="text-danger">PROPOSED TERMS AND CONDITIONS FOR AWARD OF SCHOLARSHIP:</h6>
-            <p>Scholarship Fees. The eligibility criterion is as below. For the 1st year</p>
-            <table class="table table-bordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th>Category</th>
-                        <th>Merit Criteria</th>
-                        <th>Tuition Fee Waiver</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td colspan="3" class="font-weight-bold">ACAT</td></tr>
-                    <tr><td>Slab 1</td><td>Top 3 Rank holders ? (Needs to be decided)</td><td>100%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 85 percentile ? (Needs to be decided)</td><td>50%</td></tr>
-                    <tr><td>Slab 3</td><td>Above 75 percentile ? (Needs to be decided)</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">CAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 85 percentile</td><td>70%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 75 to 85 percentile</td><td>70%</td></tr>
-                    <tr><td>Slab 3</td><td>70 to 75 percentile</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">MAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 90 percentile</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 80 to 90 percentile</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold">KMAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 350 marks out of 720 marks</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>300 to 350 marks out of 720 marks</td><td>25%</td></tr>
-                </tbody>
-            </table>
-            <p><strong>1st year:</strong> The scholarship will be available to the top 10% of sanctioned intake</p>
-            <p><strong>2nd year:</strong> The scholarship will be available to students with a CGPA 8.5 and higher – subject to a maximum of 10% of the sanctioned intake</p>
-            <h6 class="text-danger mt-3">RENEWAL OF SCHOLARSHIP FEES:</h6>
-            <p>Renewal of scholarship Fees for subsequent years is subject to meeting the following conditions:</p>
-            <ol>
-                <li>Consistent Academic performance by securing a Cumulative Grade Point Average (CGPA) of at least 8.5 at the end of the first year of the programme.</li>
-                <li>A certificate of good conduct from the Principal. S/he will take into account if any disciplinary action was taken against the student during the period of study in the University.</li>
-                <li>Clearing each semester without any arrear.</li>
-                <li>Failing to meet the a fore mentioned conditions 1,2 and 3, the candidate will be required to pay the full fees in the second year.</li>
-            </ol>
-        </div>
-
-        <div class="tab-pane fade p-3" id="amaravati-scholarship" role="tabpanel" aria-labelledby="amaravati-scholarship-tab">
-            <p>Scholarship Fees: The eligibility criterion is as below.<br>For the 1st year</p>
-            <table class="table table-bordered">
-                <thead class="thead-light">
-                    <tr>
-                        <th>Category</th>
-                        <th>Merit Criteria</th>
-                        <th>Tuition Fee Waiver</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td colspan="3" class="font-weight-bold text-danger">CAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 85 percentile in CAT</td><td>70%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 75 to 85 percentile in CAT</td><td>50%</td></tr>
-                    <tr><td>Slab 3</td><td>70 to 75 percentile in CAT</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold text-danger">MAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 90 percentile in MAT</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>Above 80 to 90 percentile in MAT</td><td>25%</td></tr>
-                    <tr><td colspan="3" class="font-weight-bold text-danger">KMAT</td></tr>
-                    <tr><td>Slab 1</td><td>Above 350 marks out of 720</td><td>50%</td></tr>
-                    <tr><td>Slab 2</td><td>300 to 350 marks out of 720</td><td>25%</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="tab-pane fade p-3" id="coimbatore-scholarship" role="tabpanel" aria-labelledby="coimbatore-scholarship-tab">
-            <h5 class="text-danger">Scholarship</h5>
-            <p>
-                Dedicated to recognizing and rewarding academic excellence, talent, and potential through our Admission Scholarship Policy. To be considered, applicants must demonstrate a consistent record of academic excellence across Class 10, Class 12, undergraduate studies, and one of the entrance exams (CAT, MAT, or ACAT). Based on the selection process, students may receive scholarships up to 100%. Applications meeting these criteria will be shortlisted, and selected candidates will be notified accordingly. The renewal of scholarships for the second year will be determined by the scholarship committee based on the student's academic performance in the first year of the MBA program. Scholarship terms are subject to change at the discretion of the scholarship committee. By fostering a diverse and dynamic community of scholars, we strive to support the aspirations of our students and contribute positively to society.
-            </p>
-        </div>
-
-        <div class="tab-pane fade p-3" id="mysuru-scholarship" role="tabpanel" aria-labelledby="mysuru-scholarship-tab">
-            <h5 class="text-danger">Scholarship</h5>
-            <p>
-                Scholarships are available for deserving students, ranging from 25% to 75% of the tuition fee, limited to 50% of the seats (30). Selection will be based on ACAT / MAT / CAT / CMAT scores and an interview.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -785,7 +974,7 @@
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" />
+                stroke="#a4123f" />
         </svg></div>
 
 
