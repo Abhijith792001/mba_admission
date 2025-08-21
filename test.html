@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Process Steps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .header h1 {
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #7f8c8d;
+            font-size: 18px;
+        }
+        .step-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: none;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .step-content {
+            padding: 25px;
+        }
+        .step-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .step-description {
+            color: #7f8c8d;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .divider {
+            height: 40px;
+            width: 2px;
+            background: #3498db;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        .icon-container {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .step-icon {
+            font-size: 30px;
+            color: white;
+        }
+        .progress-container {
+            height: 8px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            margin: 40px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            border-radius: 4px;
+            width: 20%;
+        }
+        @media (max-width: 768px) {
+            .step-card {
+                margin-bottom: 20px;
+            }
+            .icon-container {
+                margin-right: 15px;
+                width: 60px;
+                height: 60px;
+            }
+            .step-icon {
+                font-size: 24px;
+            }
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Application Process</h1>
+            <p>Follow these simple steps to complete your application</p>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="step-card">
+            <div class="d-flex align-items-center">
+                <div class="icon-container">
+                    <i class="step-icon fas fa-user-plus"></i>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">Create Your Login</div>
+                    <p class="step-description">Set up your account credentials to access the application portal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="step-card">
+            <div class="d-flex align-items-center">
+                <div class="icon-container">
+                    <i class="step-icon fas fa-envelope"></i>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">Verify Email</div>
+                    <p class="step-description">Confirm your email address to secure your account</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="step-card">
+            <div class="d-flex align-items-center">
+                <div class="icon-container">
+                    <i class="step-icon fas fa-file-alt"></i>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">Fill Application Form Online</div>
+                    <p class="step-description">Complete the digital application form with your information</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="step-card">
+            <div class="d-flex align-items-center">
+                <div class="icon-container">
+                    <i class="step-icon fas fa-credit-card"></i>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">Pay Application Fee</div>
+                    <p class="step-description">Submit the required payment to process your application</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="step-card">
+            <div class="d-flex align-items-center">
+                <div class="icon-container">
+                    <i class="step-icon fas fa-file-upload"></i>
+                </div>
+                <div class="step-content">
+                    <div class="step-title">Upload Required Documents</div>
+                    <p class="step-description">Provide all necessary documentation to complete your application</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-primary btn-lg">Start Application</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Simple animation for progress bar
+        $(document).ready(function() {
+            setTimeout(function() {
+                $("#progress-bar").animate({
+                    width: '100%'
+                }, 2000);
+            }, 500);
+        });
+    </script>
+</body>
+</html>

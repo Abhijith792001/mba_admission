@@ -69,78 +69,132 @@
             .login-wrap {
                 margin-top: 50px !important;
             }
-        }  .content-box {
-    border-radius: 12px;
-    position: relative;
-    z-index: 2; /* bring on top */
-    margin-left: -150px; /* overlap image */
-  }
+        }
 
-  @media (max-width: 991px) {
-    /* Reset overlap on mobile */
-    .content-box {
-      margin-left: 0;
-    }
-  }
-
-
-  /* Horizontal rod */
-.rod {
-  height: 12px;
-  background: linear-gradient(to right, #666, #bbb, #666);
-  border-radius: 6px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-/* Flags */
-.flag {
-  background: #fff;
-  color: #fff;
-  padding: 20px 10px;
-  text-align: center;
-  border-radius: 0 0 10px 10px;
+        .banner-steps {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
   position: relative;
-  font-weight: 500;
+  margin-top: 36px;
+  font-family: 'Inter', Arial, sans-serif;
+  z-index: 1;
 }
 
-/* Flag bottom triangle */
-.flag::after {
-  content: "";
+/* ROD (behind) */
+.banner-steps::before {
+  content: '';
   position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid;
+  height: 18px;
+  left: 0px;
+  right: 0px;
+  top: 25px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #bdbdbd 60%, #757575 100%);
+  box-shadow: 0 4px 17px -2px rgba(70,70,80,0.23);
+  z-index: 0;
 }
 
-/* Title inside flag */
-.flag h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
+/* Single banner step */
+.banner-step {
+  position: relative;
+  width: 190px;
+  min-height: 285px;
+  background: #fff;
+  border-radius: 0 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:
+    0 8px 24px 0 rgba(30,35,90,0.13);
+  padding: 44px 0 24px 0;
+  z-index: 1;
+  color: #fff;
+  font-family: inherit;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+.banner-step .banner-title {
+  font-weight: 700;
+  font-size: 1.34rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+}
+.banner-step .banner-icon {
+  font-size: 2.7rem;
+  margin-bottom: 17px;
+  color: #fff;
+}
+.banner-step .banner-desc {
+  text-align: center;
+  font-size: 1.09rem;
+  color: #fff;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.banner-step:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  width: 70%;
+  height: 40px;
+  margin: 0 auto;
+  z-index: 2;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 50% 90%);
+  filter: brightness(0.85) drop-shadow(0 8px 18px rgba(40,30,35,0.11));
 }
 
-/* Paragraph */
-.flag p {
-  font-size: 14px;
-  margin: 0;
-  font-weight: 500;
+/* Backgrounds and gradients for each step */
+.banner-step.step1 {
+  background: linear-gradient(180deg, #173C52 65%, #0B374D 100%);
+}
+.banner-step.step2 {
+  background: linear-gradient(180deg, #d8ce79 64%, #c5b100 100%);
+}
+.banner-step.step3 {
+  background: linear-gradient(180deg, #ef985c 60%, #e57932 100%);
+}
+.banner-step.step4 {
+  background: linear-gradient(180deg, #c2493c 60%, #a22618 100%);
+}
+.banner-step.step5 {
+  background: linear-gradient(180deg, #a5a7ac 56%, #58585a 100%);
 }
 
-/* Colors for steps */
-.step-1 { background: #0d3b55; }
-.step-1::after { border-top-color: #0d3b55; }
+/* Top shadow/highlight for 3D fold */
+.banner-step::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 38px;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.27) 0%,
+    rgba(180,180,180,0.18) 30%,
+    transparent 80%
+  );
+  z-index: 2;
+}
 
-.step-2 { background: #d4af37; }
-.step-2::after { border-top-color: #d4af37; }
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .banner-step { width: 160px; }
+  .banner-steps { gap: 18px; }
+}
 
-.step-3 { background: #d35400; }
-.step-3::after { border-top-color: #d35400; }
-
-.step-4 { background: #b22222; }
-.step-4::after { border-top-color: #b22222; }
-
-.step-5 { background: #555; }
-.step-5::after { border-top-color: #555; }
+@media (max-width: 768px) {
+  .banner-steps {
+    flex-wrap: wrap;
+    gap: 20px 8px;
+  }
+  .banner-step { width: 98vw; min-width: 178px; max-width: 210px; }
+}
